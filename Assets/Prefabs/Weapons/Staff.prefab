@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 727703330307266000}
-  - component: {fileID: 4082741936641511097}
   - component: {fileID: 2897575738204117069}
+  - component: {fileID: -5007532812514863778}
   - component: {fileID: 1018031017463670864}
   m_Layer: 0
   m_Name: Staff
@@ -36,21 +36,6 @@ Transform:
   - {fileID: 1323316777465927426}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4082741936641511097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4631399658629452093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae27ef8f40d27214fbcae19b4a326436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponInfo: {fileID: 11400000, guid: a9731619330b21e45bfe42720fb3cd16, type: 2}
-  magicLaser: {fileID: 7433122746634245647, guid: d77ea8f3e2c475e4c85157b7060b99a1, type: 3}
-  magicLaserSpawnPoint: {fileID: 1323316777465927426}
 --- !u!212 &2897575738204117069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106,6 +91,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5007532812514863778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631399658629452093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3499fd9ecc0109a42adc5f7689d1416b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponInfo: {fileID: 11400000, guid: a9731619330b21e45bfe42720fb3cd16, type: 2}
 --- !u!95 &1018031017463670864
 Animator:
   serializedVersion: 7

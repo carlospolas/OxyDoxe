@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 5238184713203357146}
   - component: {fileID: 6357167632210700311}
   - component: {fileID: 6474231146275350728}
-  - component: {fileID: 626930109036200472}
-  - component: {fileID: 3001783894740814173}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -285,29 +283,3 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
---- !u!114 &626930109036200472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7144831607090097352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6969e7147a2f2864da0ff1361ff8ed34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 22
-  particleOnHitPrefabVFX: {fileID: 2800970921253291975, guid: 49f83667c715e784dbcddb5378c33501, type: 3}
---- !u!114 &3001783894740814173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7144831607090097352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a11f491f98a68742a691bc0f4dafc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

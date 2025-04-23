@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 827387291315794897}
   - component: {fileID: 4394454848475944722}
   - component: {fileID: 3463218589286051166}
-  - component: {fileID: 2064547523668649417}
+  - component: {fileID: 3326340643786022920}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -111,7 +111,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2064547523668649417
+--- !u!114 &3326340643786022920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,10 +120,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5074860654928345936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf9ed63a6354234b87167c2d61ddb5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ecd48ca6ed86d3499e014a49a421a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slashAnimPrefab: {fileID: 2308995028048876908, guid: e3fd59093a8ab63438d65c052c3e0569, type: 3}
+  slashAnimPrefab: {fileID: 791743892882358327, guid: e3fd59093a8ab63438d65c052c3e0569, type: 3}
   slashAnimSpawnPoint: {fileID: 0}
   swordAttackCD: 0.5
-  weaponInfo: {fileID: 11400000, guid: f352da4b3e1a6ec4383963d50e56a949, type: 2}
+  weaponInfo: {fileID: 11400000, guid: 42dd8b8c5c6256e41a793948d33746c5, type: 2}

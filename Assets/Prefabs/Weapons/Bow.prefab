@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8096369274825609612}
-  - component: {fileID: 7246458225132938976}
   - component: {fileID: 7877729272001923274}
+  - component: {fileID: -4202145746215731808}
   - component: {fileID: 5420065869517531302}
   m_Layer: 0
   m_Name: Bow
@@ -35,21 +35,6 @@ Transform:
   - {fileID: 4363960221673099793}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7246458225132938976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697249129940831346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6ebbe69d495e844a3dba63155f525d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponInfo: {fileID: 11400000, guid: 663b49cb2a007fe4d8ed6bdd44eff5dd, type: 2}
-  arrowPrefab: {fileID: 7144831607090097352, guid: d7f8689ee36a0f4469169acd1ef236ac, type: 3}
-  arrowSpawnPoint: {fileID: 4363960221673099793}
 --- !u!212 &7877729272001923274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,6 +90,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4202145746215731808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697249129940831346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67c5237df6a6914a81e03060eee4f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponInfo: {fileID: 11400000, guid: 663b49cb2a007fe4d8ed6bdd44eff5dd, type: 2}
 --- !u!95 &5420065869517531302
 Animator:
   serializedVersion: 7

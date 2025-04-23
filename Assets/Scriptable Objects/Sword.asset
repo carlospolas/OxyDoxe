@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d39998b496be29b4f8470f79c80f0927, type: 3}
+  m_Script: {fileID: 11500000, guid: 580d67ab43dcd004e9e8ac4361c6d5b7, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 5074860654928345936, guid: 65c4f800f0cc20140869237a2f43df24, type: 3}
   weaponCooldown: 0.5
-  weaponDamage: 3
-  weaponRange: 0

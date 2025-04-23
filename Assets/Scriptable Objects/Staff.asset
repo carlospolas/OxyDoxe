@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d39998b496be29b4f8470f79c80f0927, type: 3}
+  m_Script: {fileID: 11500000, guid: 580d67ab43dcd004e9e8ac4361c6d5b7, type: 3}
   m_Name: Staff
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 4631399658629452093, guid: 50ad529c8609da343b747b8f5c02dc37, type: 3}
-  weaponCooldown: 1.2
-  weaponDamage: 5
-  weaponRange: 5
+  weaponCooldown: 1.5
