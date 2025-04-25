@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponInfo: {fileID: 11400000, guid: 663b49cb2a007fe4d8ed6bdd44eff5dd, type: 2}
+  arrowPrefab: {fileID: 7144831607090097352, guid: d7f8689ee36a0f4469169acd1ef236ac, type: 3}
+  arrowSpawnPoint: {fileID: 4363960221673099793}
 --- !u!95 &5420065869517531302
 Animator:
   serializedVersion: 7

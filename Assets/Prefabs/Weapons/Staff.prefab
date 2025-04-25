@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponInfo: {fileID: 11400000, guid: a9731619330b21e45bfe42720fb3cd16, type: 2}
+  magicLaser: {fileID: 7433122746634245647, guid: d77ea8f3e2c475e4c85157b7060b99a1, type: 3}
+  magicLaserSpawnPoint: {fileID: 1323316777465927426}
 --- !u!95 &1018031017463670864
 Animator:
   serializedVersion: 7
@@ -238,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 8178412491041534310}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.367, y: -0.032, z: 0.08599684}
+  m_LocalPosition: {x: 0.354, y: -0.038, z: 0.08599684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
