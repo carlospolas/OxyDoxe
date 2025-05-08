@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5947629111821945686}
   - component: {fileID: 3629393407311753674}
   - component: {fileID: 3233301053167085394}
+  - component: {fileID: 410799797332078980}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Untagged
@@ -206,6 +207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473c50cf877043e41949cbab4955de4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roamChangeDirFloat: 2
+  attackRange: 5
+  enemyType: {fileID: 0}
+  attackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!114 &5947629111821945686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   deathVFXPrefab: {fileID: 2800970921253291975, guid: 82411119d4deda14bb55ea23a6f4e82f, type: 3}
+  knockBackThrust: 15
 --- !u!114 &3629393407311753674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,3 +254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockBackTime: 0.2
+--- !u!114 &410799797332078980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507529473190265221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d2657cfc4c82f40b744619cdd88509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 890043382250728102, guid: 90208c27818a99f48af234a0440ccb4f, type: 3}
+  healthGlobe: {fileID: 890043382250728102, guid: 6843f889eb2122d4abf46c1a8453d3ca, type: 3}
+  staminaGlobe: {fileID: 890043382250728102, guid: f9f31bc8492c72949a4e7497346e9a2d, type: 3}
