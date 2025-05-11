@@ -7,52 +7,65 @@ public class CameraFollow : MonoBehaviour
     public Transform target;
 
     private static CameraFollow instance; // Instância estática para o Singleton
+    private float timeSinceTargetLost = 0f;
+    [SerializeField] private float retryFindPlayerDelay = 0.5f; // Tempo para tentar encontrar o jogador novamente
 
     void Awake()
     {
-        // Singleton pattern para garantir que apenas uma instância da câmera exista
+        // Singleton pattern
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Mantém a câmera ao carregar novas cenas
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Destrói instâncias duplicadas
+            Destroy(gameObject);
             return;
         }
     }
 
-    void Start()
-    {
-        // Encontra o jogador no início da cena (se já existir)
-        FindPlayer();
-    }
-
     void Update()
     {
-        // Garante que o jogador seja encontrado se não estiver definido
+        // Se o jogador morreu (perdemos o alvo), comece a contar o tempo
         if (target == null)
         {
-            FindPlayer();
-            if(target == null) return; // se apos procurar o player ainda nao encontrar, não executa o resto do update.
+            timeSinceTargetLost += Time.deltaTime;
+            // Tenta encontrar o jogador novamente após um pequeno atraso
+            if (timeSinceTargetLost >= retryFindPlayerDelay)
+            {
+                FindPlayer();
+                timeSinceTargetLost = 0f; // Resetar o tempo
+            }
         }
-
-        Vector3 newPos = new Vector3(target.position.x, target.position.y + yOffset, -10f);
-        transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+        else
+        {
+            timeSinceTargetLost = 0f; // Resetar o tempo se o alvo for encontrado
+            Vector3 newPos = new Vector3(target.position.x, target.position.y + yOffset, -10f);
+            transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+        }
     }
 
     // Função para encontrar o jogador na cena
     void FindPlayer()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player"); // Encontra o jogador pela tag
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             target = player.transform;
+            Debug.Log("Câmera encontrou/reencontrou o jogador.");
         }
         else
         {
-            Debug.LogWarning("TECNOLOGIA");
+            Debug.LogWarning("Jogador não encontrado com a tag 'Player'. Tentando novamente...");
         }
+    }
+
+    // Função pública que pode ser chamada quando o jogador morrer (opcional para feedback imediato)
+    public void OnPlayerDeath()
+    {
+        target = null;
+        timeSinceTargetLost = 0f; // Resetar o tempo ao informar a morte
+        Debug.Log("Jogador morreu, câmera parou de seguir.");
     }
 }
